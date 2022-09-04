@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<h1>Hello, I'm from Home.html</h1>
+{% for x in context %}
+    <a href="article/{{x.id}}"><h3>{{x.title}}</h3></a>
+
+<!-- <h5>{{x.content}}</h5> -->
+{% endfor %}
+
+
+{% endblock content %}        
